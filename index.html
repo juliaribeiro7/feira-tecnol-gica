@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Saúde Mental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação de Saúde Mental</h1>
+        <form id="mentalHealthForm">
+            <div class="question">
+                <label>1. Você se sente frequentemente cansado?</label>
+                <select name="q1">
+                    <option value="0">Não</option>
+                    <option value="1">Às vezes</option>
+                    <option value="2">Frequentemente</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>2. Você tem dificuldades para dormir?</label>
+                <select name="q2">
+                    <option value="0">Não</option>
+                    <option value="1">Às vezes</option>
+                    <option value="2">Frequentemente</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>3. Você se sente ansioso(a) na maioria dos dias?</label>
+                <select name="q3">
+                    <option value="0">Não</option>
+                    <option value="1">Às vezes</option>
+                    <option value="2">Frequentemente</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>4. Você sente que não consegue lidar com a pressão do trabalho?</label>
+                <select name="q4">
+                    <option value="0">Não</option>
+                    <option value="1">Às vezes</option>
+                    <option value="2">Frequentemente</option>
+                </select>
+            </div>
+            <div class="question">
+                <label>5. Você já teve crises de pânico?</label>
+                <select name="q5">
+                    <option value="0">Não</option>
+                    <option value="1">Às vezes</option>
+                    <option value="2">Frequentemente</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateResults()">Enviar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
